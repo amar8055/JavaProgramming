@@ -1,0 +1,19 @@
+
+public class Methods {
+
+	public static void displayHighScorePosition(String playerName,int highScore)
+	{
+		System.out.println(playerName+ "Managed to get into position"+highScore+"On the high score table");
+	}
+	public static int calculateHighScorePosition(int playerScore)
+		{
+		
+		return 1;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+	
+	}
+	}

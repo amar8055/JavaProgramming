@@ -1,0 +1,120 @@
+
+public class Operators {
+
+	public static void main(String[] args) {
+
+		int result = 1 + 2; // we have 2 operators here = and + both are
+							// assignment operators
+		System.out.println("Result :" + result);
+
+		int previousResult = result;
+
+		result = result - 1;
+		System.out.println(previousResult + "-1= " + result);
+
+		previousResult = result;
+
+		result = result * 10;
+		System.out.println(previousResult + "*10= " + result);
+
+		previousResult = result;
+
+		result = result / 5;
+		System.out.println(previousResult + "/5= " + result);
+
+		previousResult = result;
+
+		result = result % 3;
+		System.out.println(previousResult + "%3=" + result);
+
+		previousResult = result;
+		result = result + 1;
+		System.out.println("Now the result is :" + result);
+		result++;
+		System.out.println("Now the result is :" + result);
+		result--;
+		System.out.println("Now the result is :" + result);
+
+		result += 2;
+		System.out.println("Now the result is :" + result);
+		result -= 2;
+		System.out.println("Now the result is :" + result);
+		result *= 10;
+		System.out.println("Now the result is :" + result);
+		result /= 10;
+		System.out.println("Now the result is :" + result);
+
+		boolean isAlien = false;
+		if (isAlien == true) {
+			System.out.println("It is an Alien");
+		} else if (isAlien == false) {
+			System.out.println("It is not an Alien");
+		}
+
+		int topscore = 100;
+		if (topscore != 100)
+			System.out.println("You got the high score");
+
+		int topscor = 100;
+		if (topscore <= 100)
+			System.out.println("You got the high score");
+
+		int topsco = 60;
+
+		// 60 100 && 100 <= 100
+		if ((topsco < topscor) && (topscor <= topscore)) // Both conditions with
+															// && operator
+															// should be true
+			System.out.println("You got the high score");
+		else
+			System.out.println("You failed");
+
+		if ((topscore > 90) || (topsco > 60)) // "||" This operators checks for
+												// only one operator is true
+		{
+			System.out.println("One of these tests are true");
+		}
+
+		int newValue = 50;
+		if (newValue == 50) {
+			System.out.println("This is True");
+		}
+
+		boolean isCar = false; // This is already a boolean value so if doesnt
+								// show any error if u put '='
+		if (isCar == true)
+			;
+		{
+			System.out.println("This is not supposed to happen");
+		}
+
+		isCar = true;
+		boolean wasCar = isCar ? true : false;
+
+		/*
+		 * This Ternary Operator works like this if isCar == true den wasCar =
+		 * true orelse warCar is false.
+		 */
+		if (wasCar)
+			System.out.println("isCar is True :" + wasCar);
+
+		double myFirstValue = 20d, mySecondValue = 80; 
+		
+		double total = myFirstValue + mySecondValue * 25;
+									
+		// wats happening here it ll calculate the * operator first
+		// dat is 25*80 = 2000 den it sums with 20
+		//usually wat should happen is 80+20*25=2500 but if we put (80+25)*25 =2500
+		
+		
+		System.out.println("My total :" + total);
+
+		total = total % 40;
+		System.out.println("Remainder :" + total);
+		if (total <= 20) {
+			System.out.println("Total was over the limit");
+		}
+
+	}
+
+}

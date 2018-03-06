@@ -1,0 +1,14 @@
+
+public class KeyWordsandExpressions {
+
+	public static void main(String[] args) {
+		
+		//calculate how many miles = 1 km
+		// 1 mile = 1.609344 kilometers
+     
+		double kilometers = (100 * 1.609344); // This is an expression
+		System.out.println("100 Miles =" + kilometers);
+		
+	}
+
+}

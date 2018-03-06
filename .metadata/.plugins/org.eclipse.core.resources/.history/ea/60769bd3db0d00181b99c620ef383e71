@@ -1,0 +1,9 @@
+//Write a program which takes two numbers from the console and displays the maximum of the two
+public class MaxNumber {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

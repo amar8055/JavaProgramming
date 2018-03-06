@@ -1,0 +1,24 @@
+/*Write a program and ask the user to enter a few words separated by a space. Use the words to create
+ *  a variable name with PascalCase. For example, if the user types: "number of students", display 
+ *  "NumberOfStudents". Make sure that the program is not dependent on the input. So, if the user types
+ *   "NUMBER OF STUDENTS", the program should still display "NumberOfStudents"
+ */
+
+
+import java.util.Scanner;
+
+public class PasCalCase {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter few words seperated by Space");
+		String s = sc.next();
+		System.out.println(s.replaceAll("\\s", ""));
+		//System.out.println(s.toUpperCase().charAt(0) + s.toLowerCase().substring(1));
+		
+		
+		//How are you
+		
+	}
+
+}

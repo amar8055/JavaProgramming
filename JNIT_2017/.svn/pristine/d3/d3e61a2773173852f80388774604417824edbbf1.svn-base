@@ -1,0 +1,28 @@
+package com.jnit.oca2017.strings;
+
+public class StringMain2 {
+
+	public static void main(String[] args) {
+		System.out.println("hello" == "hello");
+		System.out.println("hell"+"o" == "hello");
+		
+		
+		
+		System.out.println("hell".concat("o") == "hello");
+		
+		
+		
+		String s1 = "hell";
+		System.out.println(s1+"o" == "hello");
+		String s2 = s1 + "o";
+		System.out.println(s2);
+		System.out.println(s2 == "hello");
+		System.out.println((s1+"o").intern() == "hello");
+		String s3 = new String("hello");
+		String s4 = s3.intern();
+
+		String test = new String("jnit");
+		System.out.println(test+ " technologies" == "jnit technologies");
+	}
+
+}

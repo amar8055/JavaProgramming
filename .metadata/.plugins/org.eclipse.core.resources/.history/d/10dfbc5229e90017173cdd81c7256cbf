@@ -1,0 +1,9 @@
+
+public class Operators {
+
+	public static void main(String[] args) {
+		
+		int result = 1 + 2; //we have 2 operators here = and + both are assignment operators
+	}
+
+}

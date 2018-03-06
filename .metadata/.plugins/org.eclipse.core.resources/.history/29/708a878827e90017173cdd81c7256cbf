@@ -1,0 +1,23 @@
+
+public class PrimitiveDataTypes {
+
+	public static void main(String[] args) {
+		//byte
+		//short
+		//int
+		//long
+		//float
+		//double
+		//char
+		//boolean
+		String mystring = "This is a string";
+		System.out.println(mystring); 
+		mystring = mystring + ", and this is more.";
+		System.out.println(mystring);
+		mystring = mystring + "\u00A9 2015";
+		System.out.println("My String is equial to " +mystring);
+
+		String numberString ="250.55";
+	}
+
+}

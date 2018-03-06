@@ -1,0 +1,59 @@
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.OnetoMany.customer;
+
+public class CallableStatementsDemo {
+
+	public static void main(String[] args) {
+
+		storedProceduresUsingCallable();
+	}
+		public static void storedProceduresUsingCallable(){
+			
+			try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/febdb", "root","root")){
+				String sql ="call fetch_cust_fname(?)";
+				CallableStatement cstmt = con.prepareCall(sql);
+				cstmt.setString(1, "Rohini"); 
+				ResultSet rs  =cstmt.executeQuery();
+				List<customer>customers=new ArrayList<>();
+				while(rs.next())
+				{
+				//System.out.println(rs.getString("firstname"));
+				//System.out.println(rs.getString("lastname"));
+//				System.out.println(rs.getInt("ID"));
+//				System.out.println(rs.getString(3));
+					customer c= new customer(rs.getInt(1), rs.getString(2), rs.getString(3),rs.getString(4) );
+					customers.add(c);
+				}
+			
+				cstmt.close();
+				con.close();
+				//customers.forEach(System.out::println); // This works in java 1.8 version.
+//				for (customer c : customers) 
+//				{
+//				System.out.println(c.toString());	// It ll give u hash code because u didnt mention toString method in customer class.
+//				}
+				
+				customers.forEach((c)->System.out.println(c));
+				
+				//lambda Expressions are new in JAVA 1.8
+				
+			} 
+			catch (SQLException e) 
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}
+
+
+}
+

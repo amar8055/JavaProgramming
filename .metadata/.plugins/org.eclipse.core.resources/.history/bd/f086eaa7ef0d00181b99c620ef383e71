@@ -1,0 +1,12 @@
+/*
+ * Write a program and continuously ask the user to enter a number or "Ok" to exit. 
+ * Calculate the sum of all the previously entered numbers and display it on the console.
+ */
+public class EnterNumbOrOk {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

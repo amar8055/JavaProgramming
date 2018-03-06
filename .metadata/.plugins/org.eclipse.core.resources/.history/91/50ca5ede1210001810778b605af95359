@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class PasCalCase {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter few words seperated by Space");
+		String s = sc.next();
+		System.out.println(s.toUpperCase().charAt(0) + s.toLowerCase().substring(1));
+		System.out.println(s);
+		
+		//How are you
+		
+	}
+
+}

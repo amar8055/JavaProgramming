@@ -1,0 +1,16 @@
+/*
+ Write a program to count how many numbers between 1 and 100 are divisible by 3 with no remainder.
+  Display the count on the console.
+ */
+public class Between1and100 {
+
+	public static void main(String[] args) {
+		
+		for(int i=i;i<100;i++){
+			
+			System.out.println(i);
+		}
+		
+	}
+
+}

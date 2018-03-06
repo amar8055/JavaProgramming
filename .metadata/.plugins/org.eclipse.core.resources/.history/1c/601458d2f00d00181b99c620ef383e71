@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+/*
+ * Write a program and continuously ask the user to enter a number or "Ok" to exit. 
+ * Calculate the sum of all the previously entered numbers and display it on the console.
+ */
+public class EnterNumbOrOk {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+			
+		for(int a1=1;a1<100;a1++)
+		{
+			int a=sc.nextInt();	
+			System.out.println(a);
+		}
+		sc.clos();
+	}
+
+}
